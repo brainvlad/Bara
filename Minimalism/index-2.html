@@ -1,0 +1,118 @@
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <input id="burger__toggle" type="checkbox" />
+    <div class="burger">
+      <label class="burger__btn" for="burger__toggle">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4.36816 4L20.6316 20.2635"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 20.3952L20.2635 4.13175"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </label>
+      <nav class="burger__nav">
+        <a href="#home" class="burger__link">Главная</a>
+        <a href="#vacancy" class="burger__link">Вакансии</a>
+        <a href="#contact" class="burger__link">Контакты</a>
+      </nav>
+    </div>
+
+    <label class="header__burger" for="burger__toggle">
+      <svg
+        width="25"
+        height="18"
+        viewBox="0 0 25 18"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M24 0.999969H1"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+        <path
+          d="M24 17H1"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+        <path
+          d="M19 8.99997L0.999999 8.99997"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+      </svg>
+    </label>
+    <div id="home" class="welcome">
+      <h1 class="welcome__title">Мы делаем мобильные игры!</h1>
+    </div>
+    <div id="vacancy" class="vacancy">
+      <h2 class="vacancy__title">Вакансии</h2>
+      <div class="vacancy__choise">
+        <div class="vacancy__img"><img src="./img/banner.png" alt="" /></div>
+        <ul class="vacancy__list">
+          <li class="vacancy__item">2D-Artist</li>
+          <li class="vacancy__item">3D-Artist</li>
+          <li class="vacancy__item">Unreal developer</li>
+          <li class="vacancy__item">2D-Artist</li>
+          <li class="vacancy__item">3D-Artist</li>
+          <li class="vacancy__item">3D-Artist</li>
+          <li class="vacancy__item">Unreal developer</li>
+        </ul>
+      </div>
+    </div>
+    <div id="contact" class="contact">
+      <h2 class="contact__title">Связаться с нами</h2>
+      <div class="contact__form">
+        <input type="text" class="contact__input" placeholder="Имя" />
+        <input type="email" class="contact__input" placeholder="Почта" />
+        <input type="tel" class="contact__input" placeholder="Номер" />
+        <textarea
+          name=""
+          id=""
+          rows="10"
+          class="contact__input"
+          placeholder="Оставьте информацию о себе"
+        ></textarea>
+      </div>
+      <button class="contact__btn">Отправить</button>
+    </div>
+    <footer class="footer">
+      <div class="footer__copyright">© Сopyright Mobile Gaming 2022</div>
+    </footer>
+  </body>
+  <script>
+    const burgerLinks = document.querySelectorAll(".burger__link");
+    const burgerChecked = document.querySelector("#burger__toggle");
+
+    burgerLinks.forEach((element) => {
+      element.addEventListener("click", () => {
+        burgerChecked.checked = false;
+      });
+    });
+  </script>
+</html>
