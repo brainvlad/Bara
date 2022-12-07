@@ -10,6 +10,7 @@ html {
 body {
   background-color: #1e1e1e;
   font-family: Arial, Helvetica, sans-serif;
+  /* overflow: hidden; */
 }
 
 .welcome {
@@ -142,6 +143,7 @@ body {
 
 .burger {
   position: fixed;
+  right: 0;
   z-index: 9990;
   width: 380px;
   height: 100vh;
@@ -150,7 +152,7 @@ body {
   gap: 24px;
   padding: 58px 20px 0 20px;
   transition: all 0.25s;
-  transform: translateX(-100%);
+  transform: translateX(100%);
 }
 .burger__btn {
   cursor: pointer;
@@ -181,6 +183,7 @@ body {
   background-color: #1e1e1e;
   cursor: pointer;
   padding: 24px;
+  text-align: right;
 }
 
 #burger__toggle {

@@ -71,15 +71,31 @@
     <div id="vacancy" class="vacancy">
       <h2 class="vacancy__title">Вакансии</h2>
       <div class="vacancy__choise">
-        <div class="vacancy__img"><img src="./img/banner.png" alt="" /></div>
+        <div class="vacancy__img">
+          <img id="picture" src="./img/banner.png" alt="" />
+        </div>
         <ul class="vacancy__list">
-          <li class="vacancy__item">2D-Artist</li>
-          <li class="vacancy__item">3D-Artist</li>
-          <li class="vacancy__item">Unreal developer</li>
-          <li class="vacancy__item">2D-Artist</li>
-          <li class="vacancy__item">3D-Artist</li>
-          <li class="vacancy__item">3D-Artist</li>
-          <li class="vacancy__item">Unreal developer</li>
+          <li data-picture="./img/banner-1.png" class="vacancy__item">
+            2D-Artist
+          </li>
+          <li data-picture="./img/banner-2.png" class="vacancy__item">
+            3D-Artist
+          </li>
+          <li data-picture="./img/banner-3.png" class="vacancy__item">
+            Unreal developer
+          </li>
+          <li data-picture="./img/banner-4.png" class="vacancy__item">
+            2D-Artist
+          </li>
+          <li data-picture="./img/banner-5.png" class="vacancy__item">
+            3D-Artist
+          </li>
+          <li data-picture="./img/banner-6.png" class="vacancy__item">
+            3D-Artist
+          </li>
+          <li data-picture="./img/banner-7.png" class="vacancy__item">
+            Unreal developer
+          </li>
         </ul>
       </div>
     </div>
@@ -104,4 +120,17 @@
     </footer>
   </body>
   <script src="./js/burger.js"></script>
+  <script>
+    const vacancyList = document.querySelectorAll("[data-picture]");
+    const vacancyPicture = document.querySelector("#picture");
+
+    vacancyList.forEach((element) => {
+      element.addEventListener("mouseover", () => {
+        vacancyPicture.setAttribute(
+          "src",
+          element.getAttribute("data-picture")
+        );
+      });
+    });
+  </script>
 </html>
