@@ -1,0 +1,126 @@
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <div class="header__logo">
+          <img src="./img/header-logo.png" alt="" />
+        </div>
+        <div class="header__contact">
+          <h2 class="header__contact-title">Связь с нами</h2>
+          <a href="mailto:connect@my.gaming.com" class="header__contact-mail"
+            >connect@my.gaming.com</a
+          >
+          <a href="tel:+37536897845" class="header__contact-tel"
+            >+37536897845</a
+          >
+        </div>
+      </header>
+      <nav class="nav">
+        <a href="" class="nav__item nav-item-1">Наши игры</a>
+        <a href="" class="nav__item nav-item-2">Вакансии</a>
+        <a href="" class="nav__item nav-item-3">Команда</a>
+        <a href="" class="nav__item nav-item-4">Контакты</a>
+      </nav>
+      <div class="content">
+        <nav class="sidebar">
+          <li data-picture="./img/banner-1.png" class="sidebar__item">
+            2D-Artist
+          </li>
+          <li data-picture="./img/banner-2.png" class="sidebar__item">
+            3D-Artist
+          </li>
+          <li data-picture="./img/banner-3.png" class="sidebar__item">
+            Unreal developer
+          </li>
+          <li data-picture="./img/banner-4.png" class="sidebar__item">
+            2D-Artist
+          </li>
+          <li data-picture="./img/banner-5.png" class="sidebar__item">
+            3D-Artist
+          </li>
+          <li data-picture="./img/banner-6.png" class="sidebar__item">
+            3D-Artist
+          </li>
+          <li data-picture="./img/banner-7.png" class="sidebar__item">
+            Unreal developer
+          </li>
+        </nav>
+        <div class="content__main">
+          <div class="content__img">
+            <img
+              class="contant__img-pict"
+              id="picture"
+              src="./img/banner.png"
+              alt=""
+            />
+          </div>
+          <div class="content__row">
+            <div class="content__row-item bg-c-1">
+              Основная задумка игрового дизайна заключается в онлайн
+              динамических боях.
+            </div>
+            <div class="content__row-item bg-c-2">
+              В данной игре вы управляете основным персонажем с помощью двух
+              джостиков.
+            </div>
+          </div>
+          <h2 class="content__sub">Выбирая данную игру вы получите:</h2>
+          <div class="content__row">
+            <div class="content__row-item bg-c-3">
+              <img src="./img/star.png" alt="" />
+              <p>
+                В данной игре вы управляете основным персонажем с помощью двух
+                джостиков.
+              </p>
+            </div>
+            <div class="content__row-item bg-c-4">
+              <img src="./img/square.png" alt="" />
+              <p>
+                В данной игре вы управляете основным персонажем с помощью двух
+                джостиков.
+              </p>
+            </div>
+            <div class="content__row-item bg-c-5">
+              <img src="./img/circle.png" alt="" />
+              <p>
+                В данной игре вы управляете основным персонажем с помощью двух
+                джостиков.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <img src="./img/footer-logo.png" alt="" />
+      <span class="footer__span">© 2022 Vladislav Baranosvky</span>
+    </footer>
+  </body>
+  <script>
+    const vacancyList = document.querySelectorAll("[data-picture]");
+    const vacancyPicture = document.querySelector("#picture");
+
+    vacancyList.forEach((element) => {
+      element.addEventListener("mouseover", () => {
+        vacancyPicture.setAttribute(
+          "src",
+          element.getAttribute("data-picture")
+        );
+      });
+    });
+  </script>
+</html>
