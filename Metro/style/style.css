@@ -64,6 +64,7 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 6px;
+  margin-bottom: 20px;
 }
 .nav__item {
   flex: 1;
@@ -217,4 +218,159 @@ a {
   line-height: 29px;
   text-align: center;
   color: #ffffff;
+}
+
+.contacts {
+  width: 100%;
+  display: flex;
+}
+.form {
+  flex: 1;
+  background: #6973cf;
+  padding: 62px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.form__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  padding-bottom: 78px;
+  color: #ffffff;
+}
+.form__input {
+  background-color: transparent;
+  margin-bottom: 40px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding: 8px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  outline: none;
+}
+.form__input::placeholder {
+  color: #fff;
+}
+.form__btn {
+  padding: 36px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #ffffff;
+  cursor: pointer;
+  background: #5132ab;
+  border: none;
+}
+.contact__right {
+  flex: 1;
+  background: #143763;
+  padding: 62px 20px 20px 20px;
+}
+.contact__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+.contact__email {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+}
+
+.vacancy__welcome {
+  background-image: url(./../img/banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 940px;
+  padding: 20px 40px;
+}
+.vacancy__head {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
+  color: #ffffff;
+  margin-bottom: 44px;
+}
+.vacancy__p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #ffffff;
+  max-width: 640px;
+}
+
+.vacancy__list {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+.vacancy__item {
+  display: flex;
+  width: 49%;
+  height: 220px;
+}
+.vac-1 {
+  background: #28aa78;
+}
+.vac-2 {
+  background: #d24725;
+}
+.vac-3 {
+  background: #5132ab;
+}
+.vac-4 {
+  background: #5aa518;
+}
+.vacancy__info {
+  flex: 3;
+  padding: 22px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.vacancy__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  color: #d9d9d9;
+}
+.vacancy__desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  max-width: 70%;
+}
+.vacancy__next {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.vacancy__img {
+  flex: 4;
+}
+.vacancy__img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

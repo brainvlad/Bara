@@ -1,0 +1,89 @@
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.2.js"
+      integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form">
+        <label class="form__tab-btn active" for="">Авторизация</label>
+        <label class="form__tab-btn" for="">Регистрация</label>
+        <form action="" class="form__tab active">
+          <div class="form__row">
+            <input type="text" placeholder="" required />
+            <label for="">Введите E-mail</label>
+          </div>
+          <div class="form__row">
+            <input type="password" placeholder="" required />
+            <label for="">Введите пароль</label>
+          </div>
+
+          <button href="" class="form__btn">Войти</button>
+
+          <ul>
+            <li>
+              <a href=""><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-vk"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-youtube"></i></a>
+            </li>
+          </ul>
+          <a href="">Я забыл свой E-mail или пароль</a>
+        </form>
+        <form action="" class="form__tab">
+          <div class="form__row">
+            <input type="text" placeholder="" required />
+            <label for="">Введите E-mail адрес</label>
+          </div>
+          <div class="form__row">
+            <input type="text" placeholder="" required />
+            <label for="">Введите свое имя</label>
+          </div>
+          <div class="form__row">
+            <input type="password" placeholder="" required />
+            <label for="">Введите пароль</label>
+          </div>
+
+          <button href="" class="form__btn">Зарегистрироваться</button>
+
+          <div class="form__recover">
+            <input id="doc" type="checkbox" />
+            <label for="doc"
+              >Ознакомлен(-а) и принимаю
+              <a href="">пользовательское соглашение</a></label
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="./js/form.js"></script>
+</html>
