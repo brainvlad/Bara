@@ -39,43 +39,94 @@
 
           <button href="" class="form__btn">Войти</button>
 
-          <ul>
+          <ul class="social">
             <li>
-              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""
+                ><div class=""><i class="fa fa-facebook"></i></div
+              ></a>
             </li>
             <li>
-              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""
+                ><div class=""><i class="fa fa-twitter"></i></div
+              ></a>
             </li>
             <li>
-              <a href=""><i class="fa fa-instagram"></i></a>
+              <a href=""
+                ><div class=""><i class="fa fa-instagram"></i></div
+              ></a>
             </li>
             <li>
-              <a href=""><i class="fa fa-vk"></i></a>
+              <a href=""
+                ><div class=""><i class="fa fa-vk"></i></div
+              ></a>
             </li>
             <li>
-              <a href=""><i class="fa fa-youtube"></i></a>
+              <a href=""
+                ><div class=""><i class="fa fa-youtube"></i></div
+              ></a>
             </li>
           </ul>
           <a href="">Я забыл свой E-mail или пароль</a>
         </form>
-        <form action="" class="form__tab">
+        <form id="signin" action="" class="form__tab">
           <div class="form__row">
-            <input type="text" placeholder="" required />
+            <input
+              class="input"
+              id="email"
+              class=""
+              type="text"
+              placeholder=""
+              required
+            />
             <label for="">Введите E-mail адрес</label>
           </div>
           <div class="form__row">
-            <input type="text" placeholder="" required />
+            <input
+              class="input"
+              id="name"
+              type="text"
+              placeholder=""
+              required
+            />
             <label for="">Введите свое имя</label>
           </div>
           <div class="form__row">
-            <input type="password" placeholder="" required />
+            <input
+              class="input"
+              id="surname"
+              type="text"
+              placeholder=""
+              required
+            />
+            <label for="">Введите свою фамилию</label>
+          </div>
+          <div class="form__row">
+            <input
+              class="input"
+              name="date"
+              type="date"
+              placeholder=""
+              required
+            />
+            <label for="">Выберите дату рождения</label>
+          </div>
+          <div class="form__row">
+            <input
+              class="input"
+              id="pass"
+              type="password"
+              placeholder=""
+              required
+            />
             <label for="">Введите пароль</label>
           </div>
 
-          <button href="" class="form__btn">Зарегистрироваться</button>
+          <button type="submit" href="" class="form__btn">
+            Зарегистрироваться
+          </button>
 
           <div class="form__recover">
-            <input id="doc" type="checkbox" />
+            <input class="input" id="doc" type="checkbox" />
             <label for="doc"
               >Ознакомлен(-а) и принимаю
               <a href="">пользовательское соглашение</a></label

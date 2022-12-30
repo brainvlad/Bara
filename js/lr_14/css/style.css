@@ -168,3 +168,129 @@ body {
   left: 4px;
   font-size: 12px;
 }
+
+.form__recover {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.form__recover > input {
+  height: 30px;
+  width: fit-content;
+  visibility: hidden;
+}
+.form__recover > label {
+  cursor: pointer;
+  width: 260px;
+  position: relative;
+}
+.form__recover > label::before {
+  content: "";
+  position: absolute;
+  border: 2px solid #345767;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -50px;
+  border-radius: 3px;
+  transition: 0.2s;
+}
+#doc:checked + label::before {
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid #345767;
+  border-bottom: 2px solid #345767;
+  transform: translateY(-80%) rotate(40deg);
+  width: 16px;
+  height: 24px;
+}
+
+.social {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.social li a {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  /* text-align: center; */
+  /* line-height: 40px; */
+}
+.social li a div {
+  margin-top: -3px;
+  margin-left: -2px;
+}
+.social li a::before,
+.social li a::after {
+  content: "";
+  position: absolute;
+  background: #345767;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  transition: 0.5s;
+  transform: scaleX(0);
+}
+.social li a::before {
+  top: 0;
+  transform-origin: right;
+}
+.social li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.social li a::after {
+  bottom: 0;
+  transform-origin: left;
+}
+.social li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+.social li a div::before,
+.social li a div::after {
+  content: "";
+  position: absolute;
+  background: #345767;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  transition: 0.5s;
+  transform: scaleY(0);
+}
+.social li a div::before {
+  left: 0;
+  transform-origin: bottom;
+}
+.social li a div:hover::before {
+  transform: scaleY(1);
+  transform-origin: top;
+}
+.social li a div::after {
+  right: 0;
+  transform-origin: top;
+}
+.social li a div:hover::after {
+  transform: scaleY(1);
+  transform-origin: bottom;
+}
+
+input[type="date"] {
+  color: #fefefe;
+}
+input[type="date"]:valid {
+  color: #345767;
+}
+
+.error {
+  color: #b4112c !important;
+  border-color: #b4112c !important;
+}
+.error ~ label,
+.error ~ label a {
+  color: #b4112c !important;
+}
